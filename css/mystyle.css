@@ -1,0 +1,32 @@
+
+.navbar-brand img{
+    height:10vh;
+    width:10vw;
+}
+
+p{
+font-family: 'Roboto', sans-serif;
+font-family: 'Skranji', cursive;
+}
+
+.size{
+    width: 20vw;
+    height: 20vh;
+}
+
+ footer{
+    background-color: cadetblue;
+    color:#fff;
+    width: 100%;
+}  
+.fa{
+    font-size: 2em !important;
+    color:#fff;
+    padding:0.2em;
+}
+
+.jumbotron
+{
+ background-color: blue;
+}
+

@@ -1,0 +1,230 @@
+Bootstrap======> Responsive Web pages
+and here we work with predefined CSS classes.
+Mobile First Approach........
+https://getbootstrap.com/docs/4.0/getting-started/introduction/
+Bootstrap gridlayout
+Bootstrap containers
+Bootstrap nvaigation bar
+Bootstrap jumbotron
+Bootstrap carousel
+Bootstrap form 
+   ====> stacked form
+   ====> inline form 
+----------------------------------------------------------------------------------------------------
+HTML5=====> Structuring the page
+CSS3======> Styling the page. Flexbox layout. Media Queries
+JavaScript======> Behaviour( Intractive, Dynamic, Validations , DOM manipulation)
+JQuery=========> It is build JavaScript and we got the idea if we go for JQuery we have to write
+                 lesser number of lines as compared to doing the same thing with JavaScript.
+BootStrap======> Responsive Mobile First Approach. 
+----------------------------------------------------------------------------------------------------
+What are the APIs/libraries required to write the Bootstrap related code or program?
+1 CSS
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+3 Script Files
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+Q Whenever we are including any script file , that should kept at the end of the page?
+A Sometimes we work with big script files, and if they are being put at the start of the html file, so
+during the page interpretation or loading it will take delay in display the content page as the process
+will be engaged in downloading the script files.
+
+-----------------------------------------------------------------------------------
+Demo1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------
+Bootstrap 4 Grid
+
+Bootstrap 4 Grid System =====> For the components layout.
+
+
+Bootstrap's grid system allows up to 12 columns across the page.
+
+If you do not want to use all 12 column individually, you can group the columns together to create wider columns:
+
+Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.
+
+Do we have any specfic classes predefined for representing the grids?
+
+Ans Yes
+Grid Classes
+The Bootstrap 4 grid system has five classes:
+
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+The classes above can be combined to create more dynamic and flexible layouts.
+------------------------------------------------------------------------------------------------------
+
+Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+-------------------------------------------------------------------------------------------------------------
+
+Basic Structure of a Bootstrap 4 Grid
+The following is a basic structure of a Bootstrap 4 grid:
+
+<!-- Control the column width, and how they should appear on different devices -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+ </div>
+</div>
+
+Similar to table
+
+    <table>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+         <tr>
+           <td>   </td>
+           <td>  </td>
+         </tr>
+    </table>
+
+
+
+<!-- Or let Bootstrap automatically handle the layout -->
+<div class="row">
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+</div>
+</div>
+
+--------------------------------------------------------------------------------------------
+In the example below we have mentioned col-sm-6 twice, which means this setting will work for 
+medium, large , extra large. We don't have to mention explicitly as col-md-6, col-lg-6 etc.
+for extra small device it will behave as col-sm-12(100% of the screen width).
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Grid Example</h1>
+  <p>This example demonstrates a 50%/50% split on small, medium, large and xlarge devices. On extra small devices, it will stack (100% width).</p>      
+  <p>Resize the browser window to see the effect.</p> 
+  <div class="container">     
+    <div class="row">
+      <div class="col-sm-6  bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-sm-6 bg-warning">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.    
+      </div>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
+------------------------------------------------------
+In the example below we have mentioned col-md-6 twice, which means this setting will work for 
+medium, large , extra large. We don't have to mention explicitly as col-md-6, col-lg-6, co-xl-6 etc.
+for extra small device and small device , it will behave as col-xs-12 and col-sm-12(100% of the screen width) repectively.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Grid Example</h1>
+  <p>This example demonstrates a 50%/50% split on small, medium, large and xlarge devices. On extra small devices, it will stack (100% width).</p>      
+  <p>Resize the browser window to see the effect.</p> 
+  <div class="container">     
+    <div class="row">
+      <div class="col-md-6 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-md-6 bg-warning">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.    
+      </div>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------
+Bootstrap 4 Containers
+Containers
+You learned from the previous chapter that Bootstrap requires a containing element to wrap site contents.
+
+Containers are used to pad the content inside of them, and there are two container classes available:
+
+The .container class provides a responsive fixed width container
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+---------------------------------------------------------------------------------------------------------
+Bootstrap 4 Jumbotron
+
+Bootstrap 4 Jumbotron
+A jumbotron indicates a big grey box for calling extra attention to some special content or information.
+
+Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+--------------------------------------------------------------------------------------------------------
+Carousel
+
+Bootstrap 4 Carousel
+The Carousel is a slideshow for cycling through elements.
+-----------------------------------------------------------------------------------------------
+
+
+

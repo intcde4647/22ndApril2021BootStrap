@@ -1,0 +1,155 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*       header part */
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aquamarine;
+    height:12vh;
+    width:100%;
+    border-bottom: 2px solid coral;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.branding img{
+    width: 10vw;
+    height: 10vh;
+  
+}
+
+.nav-bar {
+    margin-left: 25vw;
+}
+
+.nav-bar ul{
+       list-style-type: none;
+}
+.nav-bar  ul li{
+    display: inline;
+    padding: 0.5em;
+ }
+ 
+.nav-bar ul li a {
+   color: navy;
+   font-size: 0.9em;
+   font-weight: 400;
+   text-decoration: none;
+}
+
+.nav-bar ul li a:hover{
+    color:salmon;
+    border-bottom: 0.1em solid #fff;
+    padding-bottom: 0.5em;
+}
+
+button{
+  
+    padding : 10px;
+     background: salmon;
+    border : 2px solid white;
+    border-radius : 10px;
+     width: 10vw;
+    color : #fff;
+ }
+
+ button:hover{
+    background: seashell;
+    color : salmon;
+    border : 2px solid salmon;
+}
+
+.hero-unit-container{  
+    background: url('../images/Incredible-India-poster-1.jpg'); 
+    text-align: center;
+    height:80vh;  
+    width: 100%;    
+ }
+  .hero-unit-image-mask{    
+     background: rgba(0,0,0,0.2);
+     height:80vh;
+     width:100%; 
+ }
+
+ .hero-unit-container h1{
+    margin: 0;
+    font-size : 4em;
+    color: beige;
+    padding-top:30vh;    
+}
+.hero-unit-container a{
+    text-decoration: none;
+    color:#fff;
+    background-color: coral;
+    border-radius : 5px;
+    padding: 1em;
+    display:block;
+    width:8em;
+    margin: 10px auto;
+}
+
+.hero-unit-container a:hover{
+    background-color: #fff;
+    color:coral;
+}
+
+/* Paper Layout Flex Model */
+.paper-flex-container{
+    display: flex;
+    background : rgb(205, 216, 236);   
+    flex-direction: column;
+    padding: 1em;
+}
+.paper-flex-container  h1{
+  text-align: center;
+ margin:2em auto;
+ color:#444;
+}
+.paper-flex-row{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+.paper{
+    text-align:center;
+    background: white;
+    box-shadow: 5px 5px 20px grey; 
+    height: 500px;
+    width: 300px;  
+}
+
+.paper h2{
+     font-size : 1em;
+     color:#444;
+}
+.paper img{
+    height:200px;
+    width:200px;
+}
+.paper p{
+    font-size : 0.8em;
+    color:#444;
+    font-weight: 500;
+    padding: 0 3em;
+    text-align: justify;
+}
+
+
+ /* footer */
+footer{
+    height: 10vh;   
+    background: cyan;
+    border-top: 3px solid coral;
+    color:#444;
+    font-size : 1em;
+    text-align: center;
+    padding-top:5vh;
+}

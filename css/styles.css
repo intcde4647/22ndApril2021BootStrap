@@ -1,0 +1,69 @@
+p{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Skranji', cursive;
+}
+.bg-dark{
+    background-color: cadetblue !important;
+    border-bottom:2px solid coral;
+}
+.navbar-brand img{
+    height:10vh;
+    width:10vw;
+}
+
+.navbar-nav{
+    margin-right:8vw;
+}
+.nav-item a.nav-link:hover{
+    color:#444 !important;
+    border-bottom:1px solid coral;
+}
+
+.img-fluid{
+    max-width:200px !important;
+}
+
+footer{
+    background-color: cadetblue;
+    color:#fff;
+}
+.fa{
+    font-size: 2em !important;
+    color:#fff;
+    padding:0.2em;
+}
+
+/* Media Queries */
+@media(max-width:576px){
+
+    .navbar-brand img{
+        height:10vh;
+        width:20vw;
+    }
+    .carousel-item img{
+        height:50vh;
+    }
+}
+
+@media(min-width:577px) and (max-width:768px){
+    .navbar-brand img{
+        height:10vh;
+        width:20vw;
+    }
+    .carousel-item img{
+        height:50vh;
+    }
+}
+
+
+@media(min-width:769px) and (max-width:992px){
+    .navbar-brand img{
+        height:10vh;
+        width:15vw;
+    }
+    .carousel-item img{
+        height:50vh;
+    }
+}
+
+
